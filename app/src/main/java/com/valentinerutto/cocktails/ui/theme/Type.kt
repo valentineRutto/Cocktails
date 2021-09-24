@@ -2,14 +2,21 @@ package com.valentinerutto.cocktails.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.valentinerutto.cocktails.R
+
+val gilroy = FontFamily(
+    Font(R.font.gilroy_light,FontWeight.Light),
+    Font(R.font.gilroy_extrabold,FontWeight.ExtraBold)
+)
 
 // Set of Material typography styles to start with
 val Typography = Typography(
     body1 = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = gilroy ,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp
     )
